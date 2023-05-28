@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id = "@+id/item_post_image"
+            android:layout_margin="7.5dp"
+            android:src="@drawable/review"
+            />
+        <TextView
+            android:id="@+id/item_post_title"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_margin="8dp"
+            tools:text="TITLE"
+            android:fontFamily="@font/applesdgothicneob"/>
+        <TextView
+            android:id="@+id/item_post_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginEnd="8dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@android:color/darker_gray"
+            tools:text="작성자 : "
+            android:fontFamily="@font/applesdgothicneol"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/item_post_contents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@android:color/white"
+        tools:text="Contents"
+        android:fontFamily="@font/applesdgothicneom"/>
+</LinearLayout>
